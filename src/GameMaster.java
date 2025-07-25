@@ -67,6 +67,5 @@ public static void main(String[] args) {
                         System.out.println(alive + "討伐済み");
                 }
         }
-
     }
 }

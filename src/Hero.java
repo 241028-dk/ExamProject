@@ -1,12 +1,12 @@
 public class Hero extends Character {
     private String name;
-    private int hp;
+   // private int hp;
     private String weapon;
 
     Hero(String name,int hp,String weapon) {
-        super("勇者",100);
-        setName(name);
-        setHp(hp);
+        super(name,hp);
+       // setName(name);
+       // setHp(hp);
         setWeapon(weapon);
     }
 
