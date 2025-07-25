@@ -3,13 +3,14 @@ public abstract class Monster implements  Creature {
     private int hp;
     private char suffix;
 
-    Monster() {
-        setName(name);
-        setSuffix(suffix);
-        setHp(hp);
+    public Monster(String name,int hp, char suffix) {
         if (hp < 0) {
             throw new IllegalArgumentException("初期設定に誤りがあるため、キャラクターを作成できませんでした");
         }
+        setName(name);
+        setSuffix(suffix);
+        setHp(hp);
+
     }
 
     public String getName() {// 追加
